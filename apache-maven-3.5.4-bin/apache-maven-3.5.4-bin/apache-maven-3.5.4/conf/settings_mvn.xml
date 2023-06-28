@@ -1,0 +1,167 @@
+<settings>
+	<!--
+		Switching to c:/temp for the "document and settings" spacing issues
+		some projects have when stepping out of the java realm to perform
+		function by a plugin.
+	-->
+	<localRepository>C:/Automation</localRepository>
+	<interactiveMode>true</interactiveMode>
+	<proxies>
+		<!--<proxy>
+			<active />
+			<port>80</port>
+			<host>internet.ground.fedex.com</host>
+			<id>FedEx VPN Proxy</id>
+			<nonProxyHosts>*.ground.fedex.com</nonProxyHosts>
+		</proxy>
+		 <proxy>
+            <id>FedEx</id>
+            <active>true</active>
+            <protocol>http</protocol>
+            <host>internet.proxy.fedex.com</host>
+            <port>3128</port>
+            <nonProxyHosts>localhost|*.fedex.com</nonProxyHosts>
+        </proxy> --> 
+	</proxies>
+	<servers>
+		<server>
+			<id>fxg-releases</id> 
+			<username>fxgdev</username> 
+			<password>mF9h45csTp4Apayd</password> 
+		</server>
+		<server>
+			<id>fxg-snapshots</id> 
+			<username>fxgdev</username> 
+			<password>mF9h45csTp4Apayd</password> 
+		</server>
+		<server>
+			<id>83261-GRD-TMS</id>
+			<username>${env.NEXUS_USER}</username>
+			<password>${env.NEXUS_PASSWORD}</password>
+		</server>
+		<server>
+			<id>83261-GRD-TMS-snapshot</id>
+			<username>${env.NEXUS_USER}</username>
+			<password>${env.NEXUS_PASSWORD}</password>
+		</server> 
+	</servers>
+	<mirrors>
+		<mirror>
+			<id>corp-nexus-repo</id>
+			<name>Nexus Repo</name>
+			<url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/central/</url>
+			<mirrorOf>central</mirrorOf>
+		</mirror>
+		<mirror>
+			<id>corp-nexus</id>
+			<name>Maven Repository Manager running on maven.ground.fedex.com</name>
+			<url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/groups/fxg/</url>
+			<mirrorOf>fxg</mirrorOf>
+		</mirror>
+		<mirror>
+			<id>fedex-jms</id>
+			<name>FedEx JMS</name>
+			<url>
+			https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/3535157-FedexJmsDecorator/
+			</url>
+			<mirrorOf>fedex-jms</mirrorOf>
+		</mirror>
+	</mirrors>
+
+	<profiles>
+		<profile>
+			<id>default</id>
+			<repositories>
+			<repository>                                                     
+						<id>3534524-COMMON</id>                                                    
+						<name>3534524-COMMON</name>
+						<url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/3534524-COMMON</url>
+				</repository>
+				<repository>
+						<id>corp-nexus-central</id>
+						<name>Nexus Repo</name>
+						<url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/central</url>	
+				</repository>
+				<repository>
+						<id>fxg-releases</id>
+						<name>fxg-releases</name>
+						<url>https://nexus.prod.cloud.fedex.com:8443/nexus/repository/fxg-releases/</url>
+				</repository>	
+				<!--<repository>
+						<id>fxg-snapshots</id>
+						<name>fxg-snapshots</name>
+						<url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/fxg-snapshots/</url>
+				</repository> -->				
+				<!--<repository>
+					<id>83261-GRD-TMS</id>
+					<name>83261-GRD-TMS</name>
+					<url>https://nexus.prod.cloud.fedex.com:8443/nexus/repository/83261-GRD-TMS-snapshot/</url>
+				</repository>-->
+				<repository>
+					<id>LeanFt</id>
+					<name>LeanFT</name>
+					<url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/LeanFt</url>
+				</repository>
+				<repository>                                                     
+						<id>FXF_ThirdParty</id>                                                    
+						<name>FXF_ThirdParty</name>
+						<url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/FXF_ThirdParty/</url>
+				</repository>
+				<repository>                                                     
+						<id>Maven-Central</id>                                                    
+						<name>Maven-Central</name>
+						<url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/maven-central/</url>
+				</repository>
+				<repository>                                                     
+						<id>Jenkins-ci-org</id>                                                    
+						<name>Jenkins-ci-org</name>
+						<url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/jenkins-ci-org/</url>
+				</repository>
+				<repository>
+                    <id>Redux</id>
+                    <name>Redux</name>
+                    <url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/redux/</url>
+                </repository>
+				<repository>
+                    <id>Plexus</id>
+                    <name>Plexus</name>
+                    <url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/3531349-Interaction/</url>
+                </repository>			
+				
+				<repository>
+					<id>JDBC</id>
+					<name>FedEx JDBC</name>
+					<url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/SEAR-repo/</url>
+				</repository>
+				<repository>
+					<id>Gradle</id>
+					<name>FedEx Gradle</name>
+					<url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/Gradle/</url>
+				</repository>
+				<repository>
+					<id>fedex-jms</id>
+					<name>FedEx JMS</name>
+					<url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/3535157-FedexJmsDecorator</url>
+				</repository>
+				<repository>
+					<id>DevFrameworkRepo</id>
+					<name>DevFrameworkRepo</name>
+					<url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/devframeworkrepo/</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+						<id>corp-nexus-central</id>
+						<url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/central</url>	
+				</pluginRepository>
+				<pluginRepository>
+					<id>mavenNexus</id>
+					<url>https://nexus.prod.cloud.fedex.com:8443/nexus/repository/3534524-COMMON/</url>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+	<activeProfiles>
+		<activeProfile>default</activeProfile>
+	</activeProfiles>
+</settings>

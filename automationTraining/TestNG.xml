@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suite name="cdasfedex01"-->
+
+<suite name = "Parallel Testing Suite">
+   <test name = "Parallel Tests1">
+   <parameter name = "browser" value ="chrome"/>
+      <classes>  
+         <class name= "com.automationTraining.myFirstTest"/>
+      </classes>
+   </test>
+</suite>
