@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-07T20:23:05 IST" name="Serial Testing Suite" finished-at="2023-09-07T20:23:06 IST" duration-ms="832">
+    <groups>
+    </groups>
+    <test started-at="2023-09-07T20:23:05 IST" name="Serial Tests" finished-at="2023-09-07T20:23:06 IST" duration-ms="832">
+      <class name="com.DeliveryCount.DeliveryDataDataTest1">
+        <test-method signature="testPickupDataSortingAndCounting()[pri:0, instance:com.DeliveryCount.DeliveryDataDataTest1@78b1cc93]" started-at="2023-09-07T20:23:05 IST" name="testPickupDataSortingAndCounting" finished-at="2023-09-07T20:23:06 IST" duration-ms="785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPickupDataSortingAndCounting -->
+      </class> <!-- com.DeliveryCount.DeliveryDataDataTest1 -->
+    </test> <!-- Serial Tests -->
+  </suite> <!-- Serial Testing Suite -->
+</testng-results>

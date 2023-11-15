@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-21T13:57:31 IST" name="Serial Testing Suite" finished-at="2023-07-21T13:57:44 IST" duration-ms="13355">
+    <groups>
+    </groups>
+    <test started-at="2023-07-21T13:57:31 IST" name="Serial Tests" finished-at="2023-07-21T13:57:44 IST" duration-ms="13355">
+      <class name="com.automationProject.MavenAutomation">
+        <test-method signature="main(java.lang.String)[pri:0, instance:com.automationProject.MavenAutomation@5fbe4146]" started-at="2023-07-21T13:57:31 IST" name="main" finished-at="2023-07-21T13:57:44 IST" duration-ms="13285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+      </class> <!-- com.automationProject.MavenAutomation -->
+    </test> <!-- Serial Tests -->
+  </suite> <!-- Serial Testing Suite -->
+</testng-results>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suite name="cdasfedex01"-->
+
+<suite name = "Serial Testing Suite">
+   <test name = "Serial Tests">
+  
+      <classes> 
+         <class name= "com.DeliveryCount.DeliveryDataDataTest1"/>
+   
+      </classes>
+   </test>
+</suite>

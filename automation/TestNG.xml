@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suite name="cdasfedex01"-->
+
+<suite name = "Serial Testing Suite">
+   <test name = "Serial Tests">
+   <parameter name = "browser" value ="chrome"/>
+      <classes>
+             
+         <class name= "com.automationProject.MavenAutomation"/>
+   
+      </classes>
+   </test>
+</suite>

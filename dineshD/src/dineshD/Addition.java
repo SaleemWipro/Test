@@ -10,9 +10,6 @@ public class Addition {
 	String str="dinesh";
 	str.
 	
-		
-		
-
 	}
 
 }
